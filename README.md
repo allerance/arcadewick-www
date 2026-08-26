@@ -1,1 +1,1 @@
-This is the public GitHub Pages source for https://arcadewick.com (Wickhead Lit landing). Killer Sudoku lives at https://play.arcadewick.com/ in allerance/arcadewick-web. Do not put the Flutter app here.
+This is the public GitHub Pages source for https://arcadewick.com (Wickhead Lit landing). Killer Sudoku lives at https://play.arcadewick.com/ in allerance/arcadewick-web. Lanternwick lives at http://lanternwick.arcadewick.com/ in allerance/lanternwick-web. Do not put the Flutter apps here.
