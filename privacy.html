@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy</title>
+  <meta name="theme-color" content="#0C0A09">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ember: #E85D04;
+      --ember-hover: color-mix(in srgb, #E85D04 72%, #FAF7F2);
+      --light: #FAF7F2;
+      --dark: #0C0A09;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      min-height: 100%;
+      background: var(--dark);
+      color: var(--light);
+    }
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(2rem, 8vh, 5rem) clamp(1.25rem, 5vw, 3rem);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 36rem;
+    }
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+      min-height: 44px;
+      padding: 0.75rem 0.5rem;
+      color: var(--ember);
+      font-size: 1rem;
+      line-height: 1.4;
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+      text-decoration-thickness: 1px;
+    }
+    a:hover { color: var(--ember-hover); }
+    a:focus-visible {
+      outline: 2px solid var(--ember);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy</h1>
+    <a href="/">Arcadewick</a>
+  </main>
+</body>
+</html>

@@ -53,7 +53,7 @@
       align-items: center;
       text-align: center;
       width: 100%;
-      max-width: 36rem;
+      max-width: 52rem;
     }
 
     .lockup {
@@ -66,6 +66,39 @@
       margin-top: 1.75rem;
       font-size: 1rem;
       font-weight: 400;
+      line-height: 1.4;
+      color: var(--light);
+    }
+
+    .previews {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 640px) {
+      .previews {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .previews img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #FAF7F2;
+      border: 1px solid color-mix(in srgb, var(--light) 18%, transparent);
+    }
+
+    figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.95rem;
       line-height: 1.4;
       color: var(--light);
     }
@@ -85,8 +118,22 @@
       text-decoration-thickness: 1px;
     }
 
+    a.play {
+      margin-top: 1.75rem;
+      padding: 0.75rem 1.75rem;
+      color: var(--light);
+      background: var(--ember);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+    }
+
     a:hover {
       color: var(--ember-hover);
+    }
+
+    a.play:hover {
+      color: var(--light);
+      background: var(--ember-hover);
     }
 
     a:focus-visible {
@@ -94,14 +141,38 @@
       outline-offset: 4px;
       border-radius: 2px;
     }
+
+    footer {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2.25rem;
+    }
+
+    footer a {
+      margin-top: 0;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
   <main>
     <img class="lockup" src="lockup.svg" width="670" height="118" alt="Arcadewick">
     <p>This is Arcadewick.</p>
-    <a href="https://play.arcadewick.com/">Killer Sudoku</a>
-    <a href="http://lanternwick.arcadewick.com/">Lanternwick</a>
+    <div class="previews">
+      <figure>
+        <img src="preview-killer-sudoku.png" width="1280" height="800" alt="Killer Sudoku">
+        <figcaption>Killer Sudoku</figcaption>
+      </figure>
+      <figure>
+        <img src="preview-lanternwick.png" width="1280" height="800" alt="Lanternwick">
+        <figcaption>Lanternwick</figcaption>
+      </figure>
+    </div>
+    <a class="play" href="https://play.arcadewick.com/">PLAY</a>
+    <footer>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </footer>
   </main>
 </body>
 </html>
